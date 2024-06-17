@@ -1,0 +1,38 @@
+
+
+
+<table class="tablestyle">
+    <td colspan="4">
+    <h2>Famous Inventors</h2>
+    </td>
+    <tr>
+        <th>
+            First Name
+        </th>
+        <th>
+            Last Name
+        </th>
+        <th>
+            Innovation
+        </th>
+        <th>
+            Year
+        </th>
+    </tr>
+    @for (p of personResult.complete; track $index) {
+        <tr>
+            <td>
+                {{p.firstName}}
+            </td>
+            <td>
+                {{p.lastName}}
+            </td>
+            <td>
+                {{p.innovation}}
+            </td>
+            <td>
+                {{p.year}}
+            </td>
+        </tr>
+    }
+</table>

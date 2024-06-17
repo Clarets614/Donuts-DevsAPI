@@ -1,0 +1,12 @@
+<h2>Donuts</h2>
+<!--<button (click)="callAPI()">Donuts</button>-->
+<div class="donutcontainer">
+@for (x of donutsResult.results; track $index) {
+   <div class="donutbox">
+    <p>{{x.name}}</p>
+    <img width="200px" src="{{x.photo}}">
+    <br>
+    <a class="Link" href="{{x.photo_attribution}}">Link</a>
+</div>
+}
+</div>
